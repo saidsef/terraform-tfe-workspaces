@@ -1,6 +1,6 @@
 provider "tfe" {}
 
-module "workdpaces" {
+module "workspaces" {
   source                        = "../../"
   agent_pool_id                 = var.agent_pool_id
   allow_destroy_plan            = var.allow_destroy_plan
@@ -13,6 +13,7 @@ module "workdpaces" {
   organization                  = var.organization
   project_id                    = var.project_id
   queue_all_runs                = var.queue_all_runs
+  remote_state_consumer_ids     = var.remote_state_consumer_ids
   speculative_enabled           = var.speculative_enabled
   ssh_key_id                    = var.ssh_key_id
   structured_run_output_enabled = var.structured_run_output_enabled

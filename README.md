@@ -5,7 +5,7 @@ This Terraform workspaces module oversees the configuration and lifecycle of all
 ## Prerequisites
 
 - Terraform Cloud / Enterprise account
-- Terraform >= 1.x
+- Terraform >= 1.3
 - ...
 - Profit?
 
