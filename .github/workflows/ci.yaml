@@ -55,7 +55,7 @@ jobs:
         cd examples/complete
         terraform init -backend=false -upgrade -reconfigure
         terraform validate
-    - name: Exmaple Remote Validate
+    - name: Example Remote Validate
       run: |
         cd examples/remote
         terraform init -backend=false -upgrade -reconfigure
