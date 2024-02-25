@@ -28,4 +28,7 @@ No resources.
 
 ## Outputs
 
-No outputs.
+| Name | Description |
+|------|-------------|
+| <a name="output_id"></a> [id](#output\_id) | Workspace ID |
+| <a name="output_name"></a> [name](#output\_name) | Workspace name |
