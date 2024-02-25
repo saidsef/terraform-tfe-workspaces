@@ -1,4 +1,5 @@
-# Terraform TFE/C Workspaces
+# Terraform TFE/C Workspaces Module
+[![CI](https://github.com/saidsef/terraform-tfe-workspaces/actions/workflows/ci.yaml/badge.svg)](#deployment--usage) ![GitHub issues](https://img.shields.io/github/issues-raw/saidsef/terraform-tfe-workspaces) [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](./LICENSE.md)
 
 This Terraform workspaces module oversees the configuration and lifecycle of all your Terraform Cloud workspaces. It is built to operate from a designated Terraform Cloud workspace, tasked with provisioning and managing the remaining workspaces through Terraform code (IaC).
 
