@@ -9,3 +9,9 @@ output "name" {
   value       = module.workspaces.name
   sensitive   = false
 }
+
+# output "execution_mode" {
+#   description = "Workspace execution mode"
+#   value       = module.workspaces.execution_mode
+#   sensitive   = false
+# }
