@@ -77,10 +77,25 @@ jobs:
           version: "latest"
           github_token: ${{ github.token }}
 
+  attest:
+    name: attest
+    runs-on: ubuntu-latest
+    needs: [tfsec]
+    permissions:
+      attestations: write
+      contents: read
+      id-token: write
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - uses: actions/attest-build-provenance@v1
+        with:
+          subject-path: '**/*.tf'
+
   auto-approve:
     if: contains(github.event_name, 'pull_request')
     runs-on: ubuntu-latest
-    needs: [validate, tfsec]
+    needs: [validate, attest, tfsec]
     steps:
     - name: Auto Approve PR
       uses: actions/github-script@v7
